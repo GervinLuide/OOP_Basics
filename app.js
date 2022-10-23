@@ -22,3 +22,18 @@ console.log(square)
 square.calcPerimeter();
 console.log(triangle)
 triangle.calcPerimeter();
+
+
+class Square extends Shape{
+
+    constructor(sideLength) {
+        super("squaree", 4, sideLength);
+    }
+    calcArea(){
+        console.log(this.name + this.sideLength*this.sideLength);
+    }
+}
+let square2 = new Square(5);
+
+console.log(square2)
+square2.calcArea()
